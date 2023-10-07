@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(43, 43, 43);
+}
+
+.background-container{
+    background-image: url('../../public/background.jpg');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    z-index: -10000;
+}
+.tittle-container{
+    z-index: 1;
+    margin-top: 250px;
+    text-align: center;
+}
+.blured-container{
+    backdrop-filter: blur(5px);
+    padding: 3em;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+.tittle{
+    z-index: 10;
+    font-size: 5em;
+    font-weight: bold;
+    color: aliceblue;
+}
+.divider{
+    margin: 2em auto;
+    max-width: 600px;
+    border: 1px solid aliceblue;
+}
+.sub-tittle{
+    font-size: 1.4em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-tittle .text{
+    color: orange;
+    margin-bottom: 1em;
+}
+
+.navbar-container{
+    width: 100%;
+}
+
+.navbar{
+    padding: 1em;
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar-item{
+    padding: 1em;
+}
+
+.navbar-link{
+    text-decoration: none;
+    font-weight: bold;
+    color:aliceblue;
+    font-size: 1.1em;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar-link:hover{
+    color: orange;
+    border-bottom: 2px solid orange;
+}
+
+.active{
+    color: orange;
+    border-bottom: 2px solid orange;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cap-item{
+    height: 34vh;
+    width: 100%;
+    background-image: url('../../public/capybara.png');
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: all 0.7s ease-in-out;
+}
+
+.container:hover .cap-item{
+    opacity: 1;
+}
